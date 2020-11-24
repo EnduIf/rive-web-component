@@ -37,7 +37,7 @@ and check your frameworks documentation on how to use Web Components
 
 ### Attributes
 
-All Attributes that the HTMLElement accepts:
+All attributes that the HTMLElement accepts:
 
 - file: string
 
@@ -89,7 +89,7 @@ All Methods the HTMLElement has:
 
   
 
-> will resume the animation if paused or will play the animation given by the first parameter and return a promise which resolves when the animation ended (when the current animations gets override the promise will get rejected!!)
+> Will resume the animation if paused or will play the animation given by the first parameter and return a promise which resolves when the animation ended (when the current animations gets override the promise will get rejected!!)
 
   
 
@@ -97,7 +97,7 @@ All Methods the HTMLElement has:
 
   
 
-> will pause the animation
+> Will pause the animation
 
   
 
@@ -105,7 +105,7 @@ All Methods the HTMLElement has:
 
   
 
-> will change (override) the currently playing animation and return a promise which resolves when the animation ended (when the current animations gets override the promise will get rejected!!)
+> Will change (override) the currently playing animation and return a promise which resolves when the animation ended (when the current animations gets override the promise will get rejected!!)
 
 
   
@@ -118,8 +118,8 @@ All Methods the HTMLElement has:
 
   
 
-> will fire when the Element is ready to play animations
-Wait until this Event has been fired before calling methods or changing Properties
+> Will fire when the element is ready to play animations
+Wait until this event has been fired before calling methods or changing properties
 
   
 
