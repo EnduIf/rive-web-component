@@ -18,14 +18,13 @@ With this package you can bring the power of Rive / Flare to the browser and enh
 Get the package with
 
 > npm i rive-web-component
-
   
 
 and check your frameworks documentation on how to use Web Components
 
 ### CDN
 
-  
+> https://unpkg.com/rive-web-component@latest
 
 ## How to use
 
