@@ -1,0 +1,15 @@
+{
+  "name": "rive-web-component",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "unpkg": "dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "build:prod": "echo flutter build has to be done manualy && node scripts/build.js && microbundle",
+    "dev": "microbundle watch"
+  },
+  "devDependencies": {
+    "microbundle": "^0.12.4"
+  }
+}

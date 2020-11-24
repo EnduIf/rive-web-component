@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.umd.js"></script>
+
+</head>
+<body style="background-color: #5D5D5D; width: 100%; height: 100%; margin: 0; position: absolute; display: flex; align-items: center; justify-content: center;">
+    <div id="button" style="width: 20%; height: 20%; cursor: pointer;" >
+        <rive-actor id="riveActor" file="./assets/switch_daytime.flr" animation="night_idle" />
+    </div>
+    <script defer>
+        let ready = false;
+        let isNight = true;
+        let riveActor = document.getElementById('riveActor')
+        riveActor.addEventListener("on-ready", () => {
+            ready = true;
+            console.log("ready")
+            console.log("currently playing", riveActor.playing);
+        });
+        document.getElementById("button").addEventListener("click", () => {
+            console.count("Click")
+            console.log("click");
+            console.log(isNight);
+            if(ready){
+                if(isNight === true){
+                    isNight = false;
+                    riveActor.changeAnimation("switch_day").then(() => {
+                        console.count("then")
+                        riveActor.changeAnimation("day_idle");
+                    }).catch(() => console.count("catch"));
+                }else{
+                    isNight = true;
+                    riveActor.changeAnimation("switch_night").then(() => {
+                        console.count("then")
+                        riveActor.changeAnimation("night_idle");
+                    }).catch(() => console.count("catch"));
+                }
+            }
+        });
+    </script>
+</body>
+</html>
