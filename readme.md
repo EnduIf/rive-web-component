@@ -132,7 +132,7 @@ Will never fire on looped animations
 
   
 
-## How dose it work?
+## How does it work?
 
 This package is based on the [flare_flutter](https://pub.dev/packages/flare_flutter) package from [rive.app](https://pub.dev/publishers/rive.app/packages)
 

@@ -4,6 +4,7 @@
   "main": "dist/index.js",
   "module": "dist/index.module.js",
   "unpkg": "dist/index.umd.js",
+  "version": "0.1.0",
   "scripts": {
     "build": "microbundle",
     "build:prod": "echo flutter build has to be done manualy && node scripts/build.js && microbundle",
