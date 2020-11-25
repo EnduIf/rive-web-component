@@ -5,6 +5,11 @@
   "module": "dist/index.module.js",
   "unpkg": "dist/index.umd.js",
   "version": "0.1.2",
+  "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/NyauIf/rive-web-component.git"
+  },
   "scripts": {
     "build": "microbundle",
     "build:prod": "echo flutter build has to be done manualy && node scripts/build.js && microbundle",
